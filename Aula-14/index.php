@@ -10,13 +10,14 @@
     <pre>
     <?php 
         require_once "Video.php";
-        require_once "Pessoa.php";
+        require_once "Gafanhoto.php";
 
         $v[0] = new Video("Aula 1 de POO");
         $v[1] = new Video("Aula 12 de PHP");
         $v[2] = new Video("Aula 15 de HTML5");
 
-        $p = new Pessoa("Gilberto", 22, "M");
+        $p[0] = new Gafanhoto("Gilberto", 22, "M", "gil");
+
         print_r($v);
         print_r($p);
     ?>
