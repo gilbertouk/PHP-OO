@@ -1,4 +1,5 @@
 <?php 
+    require_once "AcoesVideos.php";
     class Video implements AcoesVideos {
         private $titulo;
         private $avaliacao;
@@ -45,13 +46,13 @@
             $this->reproduzindo = $reproduzindo;
         }
         public function like(){
-            
+            $this->curtidas ++;
         }
         public function pause(){
-            
+            $this->reproduzindo = false;
         }
         public function play(){
-            
+            $this->reproduzindo = true;
         }
     }
 ?>
