@@ -9,17 +9,20 @@
 <body>
     <pre>
     <?php 
-        require_once "Video.php";
-        require_once "Gafanhoto.php";
+       require_once "Video.php";
+       require_once "Gafanhoto.php";
+       require_once "Visualizacao.php";
 
-        $v[0] = new Video("Aula 1 de POO");
-        $v[1] = new Video("Aula 12 de PHP");
-        $v[2] = new Video("Aula 15 de HTML5");
+       $v[0] = new Video("Aula 1 de POO");
+       $v[1] = new Video("Aula 12 de PHP");
+       $v[2] = new Video("Aula 15 de HTML5");
 
-        $p[0] = new Gafanhoto("Gilberto", 22, "M", "gil");
+       $p[0] = new Gafanhoto("Gilberto", 22, "M", "gil");
+       $p[1] = new Gafanhoto("Lethicia", 29, "F", "let");
 
-        print_r($v);
-        print_r($p);
+       $vis[0] = new Visualizacao($p[0], $v[2]);
+
+       print_r($vis);
     ?>
     </pre>
 </body>
