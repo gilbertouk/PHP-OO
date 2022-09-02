@@ -21,7 +21,10 @@
        $p[1] = new Gafanhoto("Lethicia", 29, "F", "let");
 
        $vis[0] = new Visualizacao($p[0], $v[2]);
+       $vis[1] = new Visualizacao($p[0], $v[1]);
 
+       $vis[0]->avaliar();
+       $vis[1]->avaliarPorc(85);
        print_r($vis);
     ?>
     </pre>
